@@ -1,4 +1,17 @@
-# src/main/resources/application.yml
-app:
-  name: ${project.artifactId}  # ????pom?artifactId
-  version: ${project.version}  # ????pom?version
+spring:
+  profiles:
+    active: dev
+  application:
+    name: hello-sample
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,env
+  endpoint:
+    health:
+      show-details: always

@@ -1,1 +1,4 @@
-spring.application.name=hello-sample
+# src/main/resources/application.yml
+app:
+  name: ${project.artifactId}  # ????pom?artifactId
+  version: ${project.version}  # ????pom?version

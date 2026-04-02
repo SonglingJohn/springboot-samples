@@ -1,0 +1,13 @@
+team:
+  leader: 张三
+  age: 40
+  email: zhangsan@qq.com
+  phone: 13800138000
+  createTime: 2024-01-01
+spring:
+  application:
+    name: spring-boot-week04
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
